@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador</title>
+
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif;}
+        
+        #buscador-container{
+            width: 500px;
+            margin: 100px auto;
+        }
+        #buscador{
+            font-size: 28px;
+            padding: 10px 15px;
+        }
+        #sugerencias{
+            border: solid 1px black;
+            width: 375px;
+            display: none;
+            position: absolute;
+        }
+
+        #sugerencias a{
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #aaa;
+        }
+        #sugerencias a:hover{
+            background-color: #003366;
+            color: white;
+        }
+
+        #sugerencias strong{
+            color: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="buscador-container">
+        <input type="text" id="buscador">
+        <div id="sugerencias">
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

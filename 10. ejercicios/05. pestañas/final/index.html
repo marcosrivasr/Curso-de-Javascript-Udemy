@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acordeon</title>
+
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif;}
+        
+        #tabs-container{
+            width: 500px;
+            margin: 100px auto;
+            border: solid 1px black;
+        }
+        #tabs-container .tabs{
+            display: flex;
+            background-color: #ccc;
+        }
+        #tabs-container .tabs .tab,
+        #tabs-container .tabs .tab button{
+            width: 100%;
+            
+        }
+
+        #tabs-container .tabs .tab button{
+            background-color: transparent;
+            border: none;
+            padding: 10px 0;
+            cursor: pointer;
+        }
+
+
+        #tabs-container .tabs-containers .content{
+            display: none;
+        }
+
+        #tabs-container .tabs .tab.active-tab{
+            background-color: white !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="tabs-container">
+        <div class="tabs">
+            <div class="tab"><button>Tab 1</button></div>
+            <div class="tab"><button>Tab 2</button></div>
+            <div class="tab"><button>Tab 3</button></div>
+        </div>
+
+        <div class="tabs-containers">
+            <div class="content">hola 1</div>
+            <div class="content">hola 2</div>
+            <div class="content">hola 3</div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

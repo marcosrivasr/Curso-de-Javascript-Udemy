@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+
+    <style>
+        #slider-container{
+            width: 1400px;
+        }
+        #slider-container #buttons-container{
+            text-align: center;
+        }
+        
+        .item{
+            display: none;
+        }
+
+        #slider-container .item-active{
+            display: block;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="slider-container">
+        <div id="buttons-container">
+            <button id="bPrev">Atras</button>
+            <button id="bNext">Siguiente</button>
+        </div>
+
+        <div id="slider-items">
+            <div class="item">
+                <img src="img/foto01.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/foto02.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/foto03.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="img/foto04.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

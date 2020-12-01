@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador</title>
+
+    <style>
+        
+        button{
+            border: none;
+            background-color: royalblue;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bolder;
+        }
+        #temporizador-container{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 48px;
+        }
+
+        #display-container{
+            display: flex;
+            justify-content: center;
+        }
+
+        .display{
+            padding: 20px 40px;
+            border: solid 1px #ccc;
+        }
+
+        .display div{
+            display: block;
+            text-align: center;
+        }
+
+        .display .numero{
+            font-size: 80px;
+        }
+
+        .display .botones-container button{
+            font-size: 30px;
+            padding: 10px 15px;
+        }
+
+        #botones-container{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="temporizador-container">
+        <div id="display-container">
+            <div id="horas" class="display">
+                <div class="titulo">horas</div>
+                <div class="numero">00</div>
+                <div class="botones-container">
+                    <button class="bAumentar" data-unidad="horas">+</button>
+                    <button class="bDisminuir" data-unidad="horas">-</button>
+                </div>
+            </div>
+            <div id="minutos" class="display">
+                <div class="titulo">minutos</div>
+                <div class="numero">00</div>
+                <div class="botones-container">
+                    <button class="bAumentar" data-unidad="minutos">+</button>
+                    <button class="bDisminuir" data-unidad="minutos">-</button>
+                </div>
+            </div>
+            <div id="segundos" class="display">
+                <div class="titulo">segundos</div>
+                <div class="numero">00</div>
+                <div class="botones-container">
+                    <button class="bAumentar" data-unidad="segundos">+</button>
+                    <button class="bDisminuir" data-unidad="segundos">-</button>
+                </div>
+            </div>
+        </div>
+        <div id="botones-container">
+            <button id="bIniciar">Iniciar</button>
+            <button id="bDetener">Detener</button>
+            <button id="bReiniciar">Reiniciar</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

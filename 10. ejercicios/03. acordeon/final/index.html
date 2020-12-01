@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acordeon</title>
+
+    <style>
+        
+
+        .acordeon{
+            width: 500px;
+            margin: 100px auto;
+        }
+
+        .acordeon .item{
+            display: block;
+        }
+
+        .acordeon .item .header button{
+            display: block;
+            width: 100%;
+            padding: 20px;
+        }
+        .acordeon .item .content{
+            transition: height 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+            overflow: hidden;
+            height: 0;
+        }
+
+        .acordeon .item .content.show{
+            height: 150px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="acordeon">
+        <div class="item">
+            <div class="header"><button>Elemento 1</button></div>
+            <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem recusandae, commodi sint at quia nulla placeat. Modi nostrum culpa eos dolorem dignissimos. Cum veritatis nulla modi nam blanditiis quasi?
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="header"><button>Elemento 1</button></div>
+            <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem recusandae, commodi sint at quia nulla placeat. Modi nostrum culpa eos dolorem dignissimos. Cum veritatis nulla modi nam blanditiis quasi?
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="header"><button>Elemento 1</button></div>
+            <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem recusandae, commodi sint at quia nulla placeat. Modi nostrum culpa eos dolorem dignissimos. Cum veritatis nulla modi nam blanditiis quasi?
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="header"><button>Elemento 1</button></div>
+            <div class="content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem recusandae, commodi sint at quia nulla placeat. Modi nostrum culpa eos dolorem dignissimos. Cum veritatis nulla modi nam blanditiis quasi?
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

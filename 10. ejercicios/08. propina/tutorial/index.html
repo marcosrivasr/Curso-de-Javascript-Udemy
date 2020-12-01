@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propina</title>
+
+    <style>
+        body{box-sizing: border-box;font-family: Arial, Helvetica, sans-serif; background-color:mediumslateblue;}
+        
+        #propina-container{
+            background-color: #fff;
+            width: 500px;
+            margin: 100px auto;
+            padding: 20px;
+        }
+
+        #resultados{
+            display: grid;
+            grid-template: repeat(2, 1fr) / repeat(2, 1fr) ;
+        }
+
+        .persona{
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+        .persona div{
+            padding: 5px 0;
+        }
+
+        .persona h3{
+            text-align: center;
+        }
+
+        .form label,
+        .form input{
+            display: block;
+            padding: 5px;
+            width: 100%;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        #summary{
+            text-align: center;
+        }
+
+        .pagado{
+            background-color: #ccc;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="propina-container">
+        <div class="form">
+            <label for="personas">Personas</label>
+            <input type="number" id="personas" value="5">
+
+            <label for="total">Total a pagar</label>
+            <input type="number" id="total" value="7000">
+
+            <label for="propina">Propina</label>
+            <input type="text" id="propina" value="18">
+
+            <button id="bgenerar">Generar</button>
+        </div>
+      
+        
+      <div id="summary">
+
+      </div>
+      <div id="resultados">
+
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
