@@ -1,0 +1,147 @@
+body {
+  background-color: #5151e0;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li button {
+  border: none;
+  padding: 10px;
+  margin: 10px 20px;
+  border-radius: 3px;
+}
+
+.board {
+  background-color: #eee;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  width: 250px;
+  height: auto;
+  transition: background-color 0.4s;
+}
+.board .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+.board .header .title {
+  font-size: 14px;
+  font-weight: bold;
+  width: 80%;
+}
+.board .items .card .card-wrapper {
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.board .items .card .card-wrapper .title {
+  width: 90%;
+  font-size: 12px;
+}
+.board .new-item .form-new .new-input {
+  background: none;
+  border-radius: 3px;
+  border: none;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+}
+.board .new-item .form-new .new-input:hover {
+  background-color: #d5d5d5;
+}
+.board .new-item .form-new .new-input:focus {
+  background-color: white;
+}
+
+.hide .card-wrapper {
+  background-color: #9ed5f5 !important;
+  opacity: 0.5;
+}
+
+.drag-over {
+  background-color: yellow;
+}
+
+.placeholder {
+  height: 10px;
+  transition: background 0.4s;
+}
+.placeholder-active {
+  background-color: #9ed5f5;
+}
+
+.options .more-options {
+  background: none;
+  font-weight: bold;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+.options .more-options:hover {
+  background-color: #ddd;
+}
+.options .submenu {
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  display: none;
+  background-color: #fff;
+  width: 100px;
+  position: absolute;
+}
+.options .submenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.options .submenu ul li a {
+  font-size: 12px;
+  padding: 10px;
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+.options .submenu ul li:hover {
+  background-color: #9ed5f5;
+}
+
+.submenu-active {
+  display: block !important;
+}
+
+.temp {
+  position: absolute;
+}
+.temp .card-wrapper {
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.temp .card-wrapper .title {
+  width: 90%;
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=main.css.map */

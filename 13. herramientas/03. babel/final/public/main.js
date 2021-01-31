@@ -2,7 +2,7 @@
 
 var _alumno$domicilio2, _alumno$domicilio2$re;
 
-const alumno = {
+var alumno = {
   nombre: 'Juan',
   domicilio: {
     calle: 'Colon',

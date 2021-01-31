@@ -11,6 +11,8 @@ function multiplicacion(a, b){
     return a * b;
 }
 
+let mensaje = 'Hola desde el archivo de operaciones';
+
 class Log{
 
     constructor(){}
